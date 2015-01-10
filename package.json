@@ -1,6 +1,6 @@
 {
   "name": "passport-eve",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Eve Online SSO strategy for passport.js",
   "main": "./lib/index.js",
   "dependencies": {

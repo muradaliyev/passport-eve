@@ -1,44 +1,107 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
 1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'install',
-1 verbose cli   '.',
-1 verbose cli   '-g' ]
+1 verbose cli   'publish' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.35
 4 verbose node symlink C:\Program Files\nodejs\\node.exe
-5 verbose cache add [ '.', null ]
-6 verbose cache add name=undefined spec="." args=[".",null]
-7 verbose parsed url { protocol: null,
-7 verbose parsed url   slashes: null,
-7 verbose parsed url   auth: null,
-7 verbose parsed url   host: null,
-7 verbose parsed url   port: null,
-7 verbose parsed url   hostname: null,
-7 verbose parsed url   hash: null,
-7 verbose parsed url   search: null,
-7 verbose parsed url   query: null,
-7 verbose parsed url   pathname: '.',
-7 verbose parsed url   path: '.',
-7 verbose parsed url   href: '.' }
-8 silly lockFile 3a52ce78- .
-9 verbose lock . C:\Users\amo\AppData\Roaming\npm-cache\3a52ce78-.lock
-10 silly lockFile 3a52ce78- .
-11 silly lockFile 3a52ce78- .
-12 error addLocal Could not install .
-13 error Failed to parse json
-13 error Unexpected string
-14 error File: package.json
-15 error Failed to parse package.json data.
-15 error package.json must be actual JSON, not just JavaScript.
-15 error
-15 error This is not a bug in npm.
-15 error Tell the package author to fix their package.json file. JSON.parse
-16 error System Windows_NT 6.2.9200
-17 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "." "-g"
-18 error cwd F:\Dropbox\Projects\GitHub\passport-eve
-19 error node -v v0.10.35
-20 error npm -v 1.4.28
-21 error file package.json
-22 error code EJSONPARSE
-23 verbose exit [ 1, true ]
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . C:\Users\amo\AppData\Roaming\npm-cache\3a52ce78-.lock
+11 verbose tar pack [ 'C:\\Users\\amo\\AppData\\Roaming\\npm-cache\\passport-eve\\1.0.0\\package.tgz',
+11 verbose tar pack   '.' ]
+12 verbose tarball C:\Users\amo\AppData\Roaming\npm-cache\passport-eve\1.0.0\package.tgz
+13 verbose folder .
+14 info prepublish passport-eve@1.0.0
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. C:\Users\amo\AppData\Roaming\npm-cache\1f1177db-tar.lock
+17 silly lockFile 1d98bf1a-e-passport-eve-1-0-0-package-tgz tar://C:\Users\amo\AppData\Roaming\npm-cache\passport-eve\1.0.0\package.tgz
+18 verbose lock tar://C:\Users\amo\AppData\Roaming\npm-cache\passport-eve\1.0.0\package.tgz C:\Users\amo\AppData\Roaming\npm-cache\1d98bf1a-e-passport-eve-1-0-0-package-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile 1d98bf1a-e-passport-eve-1-0-0-package-tgz tar://C:\Users\amo\AppData\Roaming\npm-cache\passport-eve\1.0.0\package.tgz
+22 silly lockFile 1d98bf1a-e-passport-eve-1-0-0-package-tgz tar://C:\Users\amo\AppData\Roaming\npm-cache\passport-eve\1.0.0\package.tgz
+23 silly lockFile 644ff3be-cache-passport-eve-1-0-0-package C:\Users\amo\AppData\Roaming\npm-cache\passport-eve\1.0.0\package
+24 verbose lock C:\Users\amo\AppData\Roaming\npm-cache\passport-eve\1.0.0\package C:\Users\amo\AppData\Roaming\npm-cache\644ff3be-cache-passport-eve-1-0-0-package.lock
+25 silly lockFile 644ff3be-cache-passport-eve-1-0-0-package C:\Users\amo\AppData\Roaming\npm-cache\passport-eve\1.0.0\package
+26 silly lockFile 644ff3be-cache-passport-eve-1-0-0-package C:\Users\amo\AppData\Roaming\npm-cache\passport-eve\1.0.0\package
+27 silly lockFile 3a52ce78- .
+28 silly lockFile 3a52ce78- .
+29 silly publish { name: 'passport-eve',
+29 silly publish   version: '1.0.0',
+29 silly publish   description: 'Eve Online SSO strategy for passport.js',
+29 silly publish   main: './lib/index.js',
+29 silly publish   dependencies: { pkginfo: '0.2.x', 'passport-oauth': '~0.1.4' },
+29 silly publish   scripts: { test: 'NODE_PATH=lib node_modules/.bin/vows test/*-test.js' },
+29 silly publish   engines: { node: '>= 0.4.0' },
+29 silly publish   repository: { type: 'git', url: 'passport-eve' },
+29 silly publish   keywords: [ 'eve', 'eve-online', 'passport', 'SSO' ],
+29 silly publish   author: { name: 'Murad Aliyev', email: 'muradaliev@gmail.com' },
+29 silly publish   license: 'MIT',
+29 silly publish   licenses: [ { type: 'MIT', url: 'http://www.opensource.org/licenses/MIT' } ],
+29 silly publish   readme: '# passport-eve\r\nEve Online SSO strategy for passport.js\r\n',
+29 silly publish   readmeFilename: 'README.md',
+29 silly publish   gitHead: '02651562d8d5e39c1532470950956e0a66aec510',
+29 silly publish   _id: 'passport-eve@1.0.0',
+29 silly publish   _shasum: '3026d09111b88318c4d1fcc5e727df4b5532aa0a',
+29 silly publish   _from: '.' }
+30 verbose request where is /passport-eve
+31 verbose request registry https://registry.npmjs.org/
+32 verbose request id 17a19e55edcb81e6
+33 verbose url raw /passport-eve
+34 verbose url resolving [ 'https://registry.npmjs.org/', './passport-eve' ]
+35 verbose url resolved https://registry.npmjs.org/passport-eve
+36 verbose request where is https://registry.npmjs.org/passport-eve
+37 info trying registry request attempt 1 at 20:45:08
+38 http PUT https://registry.npmjs.org/passport-eve
+39 http 403 https://registry.npmjs.org/passport-eve
+40 verbose headers { date: 'Sat, 10 Jan 2015 19:46:24 GMT',
+40 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+40 verbose headers   'content-type': 'application/json',
+40 verbose headers   'cache-control': 'max-age=60',
+40 verbose headers   'content-length': '2437',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   'x-served-by': 'cache-fra1231-FRA',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-timer': 'S1420919184.169588,VS0,VE731',
+40 verbose headers   'keep-alive': 'timeout=10, max=50',
+40 verbose headers   connection: 'Keep-Alive' }
+41 error publish Failed PUT 403
+42 error Error: forbidden cannot modify pre-existing version: 1.0.0
+42 error old={"name":"passport-eve","version":"1.0.0","description":"Eve Online SSO strategy for passport.js","main":"./lib/index.js","dependencies":{"pkginfo":"0.2.x","passport-oauth":"~0.1.4"},"scripts":{"test":"NODE_PATH=lib node_modules/.bin/vows test/*-test.js"},"engines":{"node":">= 0.4.0"},"repository":{"type":"git","url":"passport-eve"},"keywords":["eve","eve-online","passport","SSO"],"author":{"name":"Murad Aliyev","email":"muradaliev@gmail.com"},"license":"MIT","licenses":[{"type":"MIT","url":"http://www.opensource.org/licenses/MIT"}],"gitHead":"02651562d8d5e39c1532470950956e0a66aec510","_id":"passport-eve@1.0.0","_shasum":"9bb1f54945f43694d4539e79a16c3339af6bff48","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"muradaliyev","email":"muradaliev@gmail.com"},"maintainers":[{"name":"muradaliyev","email":"muradaliev@gmail.com"}],"dist":{"shasum":"9bb1f54945f43694d4539e79a16c3339af6bff48","tarball":"http://registry.npmjs.org/passport-eve/-/passport-eve-1.0.0.tgz"}}
+42 error new={"name":"passport-eve","version":"1.0.0","description":"Eve Online SSO strategy for passport.js","main":"./lib/index.js","dependencies":{"pkginfo":"0.2.x","passport-oauth":"~0.1.4"},"scripts":{"test":"NODE_PATH=lib node_modules/.bin/vows test/*-test.js"},"engines":{"node":">= 0.4.0"},"repository":{"type":"git","url":"passport-eve"},"keywords":["eve","eve-online","passport","SSO"],"author":{"name":"Murad Aliyev","email":"muradaliev@gmail.com"},"license":"MIT","licenses":[{"type":"MIT","url":"http://www.opensource.org/licenses/MIT"}],"readme":"# passport-eve\u000d\u000aEve Online SSO strategy for passport.js\u000d\u000a","readmeFilename":"README.md","gitHead":"02651562d8d5e39c1532470950956e0a66aec510","_id":"passport-eve@1.0.0","_shasum":"3026d09111b88318c4d1fcc5e727df4b5532aa0a","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"muradaliyev","email":"muradaliev@gmail.com"},"maintainers":[{"name":"muradaliyev","email":"muradaliev@gmail.com"}],"dist":{"shasum":"3026d09111b88318c4d1fcc5e727df4b5532aa0a","tarball":"http://registry.npmjs.org/passport-eve/-/passport-eve-1.0.0.tgz"}}: passport-eve
+42 error     at RegClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:308:14)
+42 error     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:246:65)
+42 error     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:236:22)
+42 error     at Request.emit (events.js:98:17)
+42 error     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1142:14)
+42 error     at Request.emit (events.js:117:20)
+42 error     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1096:12)
+42 error     at IncomingMessage.emit (events.js:117:20)
+42 error     at _stream_readable.js:944:16
+42 error     at process._tickCallback (node.js:442:13)
+43 error If you need help, you may report this *entire* log,
+43 error including the npm and node versions, at:
+43 error     <http://github.com/npm/npm/issues>
+44 error System Windows_NT 6.2.9200
+45 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+46 error cwd F:\Dropbox\Projects\GitHub\passport-eve
+47 error node -v v0.10.35
+48 error npm -v 1.4.28
+49 verbose exit [ 1, true ]
